@@ -1,39 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - print single digit numbers
+ * main - print the letters of the alphabet
  *
- * Description: print single digit numbers with commas
+ * Description: print the letters of the alphabet
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int i, j;
+	int i = 97;
 
-	i = 48;
-	j = 48;
-
-	while (i < 58)
+	while (i < 123)
 	{
-		j = 48;
-		while (j < 58)
-		{
-			putchar(i);
-			putchar(j);
-
-			if (i < 57 || j < 57)
-			{
-				putchar(44);
-				putchar(32);
-			}
-			j++;
-		}
-
+		putchar(i);
 		i++;
 	}
-
 	putchar(10);
 
 	return (0);
