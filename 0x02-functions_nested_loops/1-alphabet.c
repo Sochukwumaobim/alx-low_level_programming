@@ -1,17 +1,20 @@
 #include "main.h"
 /**
- * _islower-check if character is lowercase.
- * @c:character to check if it islowercase.
- * Return:0-if lowercase,1-if not.
+ * print_alphabet - entry point
+ * Description - prints all alphabet, in lowercase, followed by a new line
+ * Return
  */
-int _islower(int c)
+void print_alphabet(void)
 {
-	if (c >= 'a' && c <= 'z')
+	char chr;
+
+	chr = 'a';
+
+	while (chr <= 'z')
 	{
-		return (1);
+		_putchar(chr);
+		chr++;
 	}
-	else
-	{
-		return (0);
-	}
+
+	_putchar('\n');
 }
